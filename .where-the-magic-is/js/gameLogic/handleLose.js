@@ -36,7 +36,9 @@ export function handleLose() {
 
   setTimeout(() => {
     document.addEventListener("keydown", handleStart, { once: true });
+    document.addEventListener("click", handleStart, { once: true });
     if (startScreen) startScreen.classList.remove("hide");
     if (title) title.classList.remove("hide");
   }, 1000);
 }
+

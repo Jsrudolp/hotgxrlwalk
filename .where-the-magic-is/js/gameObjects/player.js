@@ -48,6 +48,8 @@ export function setupPlayer() {
   setCustomProperty(player, "--bottom", playerBottom);
   document.removeEventListener("keydown", onJump);
   document.addEventListener("keydown", onJump);
+  document.removeEventListener("click", onJump);
+  document.addEventListener("click", onJump);
 }
 
 async function createPlayerFigures(player) {
