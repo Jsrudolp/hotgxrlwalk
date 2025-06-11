@@ -100,7 +100,7 @@ export function updatePlayer(delta) {
 }
 
 function onJump(event) {
-  if (event.code !== "Space" || isJumping) return;
+  if ((event.type !== "click" && event.code !== "Space")|| isJumping) return;
   yVelocity = JUMP_SPEED;
   isJumping = true;
   if (playerData && playerData.settings.rotate)
