@@ -7,4 +7,5 @@
   left: calc(var(--left) * 1%);
   background: repeat-x url(../../assets/ground_grass.png);
   filter: brightness(var(--brightness)) grayscale(var(--grayscale));
+  z-index: 1;
 }

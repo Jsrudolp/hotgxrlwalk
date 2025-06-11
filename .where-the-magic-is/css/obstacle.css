@@ -5,4 +5,5 @@
   width: 5rem;
   bottom: 2%;
   filter: brightness(var(--brightness));
+  z-index: 2;
 }

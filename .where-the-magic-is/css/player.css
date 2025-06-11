@@ -6,10 +6,12 @@
   bottom: calc(var(--bottom) * 1%);
   filter: brightness(var(--brightness)) grayscale(var(--grayscale));
   object-fit: contain;
+  z-index: 3;
 }
 
 .player--jump {
   animation: rotate 500ms linear;
+  z-index: 3;
 }
 
 @keyframes rotate {
