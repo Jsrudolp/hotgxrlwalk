@@ -57,21 +57,33 @@ async function createPlayerFigures(player) {
   playerRun1.src = player.run1;
   playerRun1.dataset.js = "player-image";
   playerRun1.alt = "avatar";
+  playerRun1.style.width = "100%"; 
+  playerRun1.style.height = "100%";
+  playerRun1.style.objectFit = "contain";
 
   const playerRun2 = new Image();
   playerRun2.src = player.run2;
   playerRun2.dataset.js = "player-image";
   playerRun2.alt = "avatar";
+  playerRun2.style.width = "100%"; 
+  playerRun2.style.height = "100%"; 
+  playerRun2.style.objectFit = "contain";
 
   const playerJump = new Image();
   playerJump.src = player.jumping;
   playerJump.dataset.js = "player-image";
   playerJump.alt = "avatar";
+  playerJump.style.width = "100%"; 
+  playerJump.style.height = "100%"; 
+  playerJump.style.objectFit = "contain";
 
   const playerLose = new Image();
   playerLose.src = player.lose;
   playerLose.dataset.js = "player-image";
   playerLose.alt = "avatar";
+  playerLose.style.width = "100%"; 
+  playerLose.style.height = "100%";
+  playerLose.style.objectFit = "contain"; 
 
   return {
     playerRun1,

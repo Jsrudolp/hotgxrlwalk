@@ -1,10 +1,11 @@
 .player {
   --bottom: 1;
-  max-width: 128px;
+  max-width: 80px;
   position: absolute;
-  left: 100px;
+  left: 50px;
   bottom: calc(var(--bottom) * 1%);
   filter: brightness(var(--brightness)) grayscale(var(--grayscale));
+  object-fit: contain;
 }
 
 .player--jump {
