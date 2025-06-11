@@ -4,4 +4,5 @@ import { setupGame } from "./gameLogic/setupGame.js";
 const world = document.querySelector('[data-js="world"]');
 setupGame();
 document.addEventListener("keydown", handleStart, { once: true });
+document.addEventListener("click", handleStart, { once: true });
 world.focus();
