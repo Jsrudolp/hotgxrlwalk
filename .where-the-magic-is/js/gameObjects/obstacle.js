@@ -6,8 +6,8 @@ import {
 import { speedScale } from "../gameLogic/speedScale.js";
 
 const SPEED = 0.05;
-const OBSTACLE_INTERVAL_MIN = 1200;
-const OBSTACLE_INTERVAL_MAX = 2500;
+const OBSTACLE_INTERVAL_MIN = 2500;
+const OBSTACLE_INTERVAL_MAX = 3700;
 
 let nextObstacleTime;
 let isObstacleEnabled = false;
