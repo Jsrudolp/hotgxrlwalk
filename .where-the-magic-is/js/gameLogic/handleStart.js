@@ -8,6 +8,7 @@ import { resetIsObstacleEnabled } from "../gameObjects/obstacle.js";
 
 const startScreen = document.querySelector('[data-js="start-screen"]');
 const text = document.querySelector('[data-js="text"]');
+const title = document.querySelector('[data-js="title"]');
 const player = document.querySelector('[data-js="player-image"]');
 const obstacle = document.querySelector('[data-js="obstacle"]');
 const ground = document.querySelector('[data-js="ground"]');
@@ -23,5 +24,6 @@ export function handleStart() {
   if (score) setupScore();
   if (text) text.classList.add("hide");
   if (startScreen) startScreen.classList.add("hide");
+  if (title) title.classList.add("hide");
   window.requestAnimationFrame(updateGame);
 }

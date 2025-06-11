@@ -8,6 +8,7 @@ import { positionObstacles } from "../gameObjects/obstacle.js";
 import { positionGrounds } from "../gameObjects/ground.js";
 
 const startScreen = document.querySelector('[data-js="start-screen"]');
+const title = document.querySelector('[data-js="title"]');
 const text = document.querySelector('[data-js="text"]');
 const world = document.querySelector('[data-js="world"]');
 
@@ -36,5 +37,6 @@ export function handleLose() {
   setTimeout(() => {
     document.addEventListener("keydown", handleStart, { once: true });
     if (startScreen) startScreen.classList.remove("hide");
+    if (title) title.classList.remove("hide");
   }, 1000);
 }

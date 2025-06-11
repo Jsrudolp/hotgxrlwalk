@@ -9,4 +9,5 @@
   background-color: var(--bg-color);
   border-radius: 15px;
   padding: 0.5rem 0.5rem 0.3em;
+  color: rgb(0, 0, 0);
 }

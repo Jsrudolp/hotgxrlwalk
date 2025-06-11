@@ -7,8 +7,8 @@ import {
 
 const player = document.querySelector('[data-js="player"]');
 
-const JUMP_SPEED = 0.45;
-const GRAVITY = 0.0015;
+const JUMP_SPEED = 0.4;
+const GRAVITY = 0.0012;
 
 let isJumping;
 let yVelocity;
