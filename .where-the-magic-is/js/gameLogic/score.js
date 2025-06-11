@@ -13,7 +13,7 @@ export function updateScore() {
     return (timeInSeconds = seconds);
   }
   if (timeInSeconds !== seconds) {
-    score = Math.floor((seconds - timeInSeconds) / 15);
+    score = Math.floor((seconds - timeInSeconds) / 10);
   }
   scoreElement.textContent = score;
 }
